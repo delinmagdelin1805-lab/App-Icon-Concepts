@@ -1,0 +1,192 @@
+/* Reset */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+  min-height:100vh;
+
+  background:#020617;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:30px;
+
+  font-family:'Poppins', sans-serif;
+
+  color:white;
+}
+
+/* Container */
+
+.container{
+  width:100%;
+
+  max-width:1300px;
+
+  text-align:center;
+}
+
+/* Header */
+
+.header{
+  margin-bottom:60px;
+}
+
+.header h1{
+  font-size:60px;
+
+  margin-bottom:15px;
+}
+
+.header p{
+  font-size:20px;
+
+  color:#cbd5e1;
+}
+
+/* Grid */
+
+.icon-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+  gap:35px;
+}
+
+/* Card */
+
+.icon-card{
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  border-radius:35px;
+
+  padding:40px;
+
+  backdrop-filter:blur(12px);
+
+  transition:0.3s;
+}
+
+/* Hover */
+
+.icon-card:hover{
+  transform:
+    translateY(-12px)
+    scale(1.03);
+}
+
+/* Icon */
+
+.icon{
+  width:140px;
+  height:140px;
+
+  border-radius:35px;
+
+  margin:auto auto 25px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Icon Style */
+
+.icon i{
+  font-size:58px;
+
+  color:white;
+}
+
+/* Colors */
+
+.blue{
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #38bdf8
+    );
+}
+
+.purple{
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #c084fc
+    );
+}
+
+.pink{
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #fb7185
+    );
+}
+
+.orange{
+  background:
+    linear-gradient(
+      135deg,
+      #f97316,
+      #facc15
+    );
+}
+
+/* Title */
+
+.icon-card h2{
+  font-size:28px;
+
+  font-weight:700;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+  body{
+    padding:20px;
+  }
+
+  .header h1{
+    font-size:42px;
+  }
+
+  .header p{
+    font-size:17px;
+  }
+
+  .icon{
+    width:120px;
+    height:120px;
+  }
+
+  .icon i{
+    font-size:48px;
+  }
+}
